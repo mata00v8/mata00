@@ -1,0 +1,401 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de Usuario - MATA00</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+    margin:0;
+    padding:0;
+}
+
+.contenedor{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    box-shadow:0 0 12px rgba(0,0,0,0.12);
+}
+
+h1{
+    color:#c00000;
+    font-size:38px;
+    margin-bottom:5px;
+}
+
+h2{
+    color:#222;
+    border-bottom:2px solid #c00000;
+    padding-bottom:8px;
+    margin-top:35px;
+}
+
+h3{
+    color:#c00000;
+    margin-top:25px;
+}
+
+.subtitulo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.version{
+    color:#555;
+    margin-top:10px;
+}
+
+.alerta{
+    background:#fff3cd;
+    border-left:6px solid #ffcc00;
+    padding:15px;
+    margin:20px 0;
+}
+
+.caja{
+    background:#f8f8f8;
+    border:1px solid #ddd;
+    padding:15px;
+    margin:15px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#c00000;
+    color:white;
+    padding:10px;
+    text-align:left;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+code{
+    background:#eee;
+    padding:3px 6px;
+    border-radius:4px;
+}
+
+.boton{
+    display:inline-block;
+    background:#c00000;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.footer{
+    margin-top:40px;
+    font-size:14px;
+    color:#666;
+    text-align:center;
+}
+
+@media(max-width:600px){
+    .contenedor{
+        padding:20px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>EL MATADOR - MATA00</h1>
+<div class="subtitulo">Manual de Usuario</div>
+<p>Scanner y eliminador de fallos automotriz OBD2 CAN</p>
+
+<div class="version">
+Versión del manual: 1.0<br>
+Versión del equipo: MATA00 v0.8
+</div>
+
+<hr>
+
+<h2>1. Introducción</h2>
+
+<p>
+EL MATADOR - MATA00 es un dispositivo automotriz portátil diseñado para la lectura y eliminación de códigos de avería DTC y la monitorización en tiempo real de parámetros del motor mediante comunicación OBD2 sobre CAN BUS.
+</p>
+
+<p>
+El equipo puede funcionar de dos maneras:
+</p>
+
+<ul>
+<li>Como eliminador automático de fallos, sin necesidad de ordenador ni teléfono.</li>
+<li>Como scanner automotriz, conectado a un ordenador Windows o a un teléfono Android.</li>
+</ul>
+
+<h2>2. Contenido del paquete</h2>
+
+<ul>
+<li>Unidad MATA00.</li>
+<li>Cable USB.</li>
+<li>Acceso mediante código QR a la página oficial de soporte.</li>
+<li>Software para Windows.</li>
+<li>Aplicación Android recomendada.</li>
+<li>Manual de usuario online.</li>
+</ul>
+
+<h2>3. Requisitos</h2>
+
+<h3>Para uso en Windows</h3>
+
+<ul>
+<li>Windows 10 o superior.</li>
+<li>Puerto USB disponible.</li>
+<li>Software MATA00 para Windows.</li>
+</ul>
+
+<h3>Para uso en Android</h3>
+
+<ul>
+<li>Teléfono Android compatible con USB OTG.</li>
+<li>Cable USB OTG.</li>
+<li>Aplicación Serial USB Terminal.</li>
+</ul>
+
+<a class="boton" href="https://play.google.com/store/apps/details?id=de.kai_morich.serial_usb_terminal" target="_blank">
+Descargar Serial USB Terminal
+</a>
+
+<h2>4. Modo de uso</h2>
+
+<p>
+Existen dos modos de funcionamiento:
+</p>
+
+<ul>
+<li><strong>Modo Eliminador de Fallos</strong></li>
+<li><strong>Modo Scanner Automotriz</strong></li>
+</ul>
+
+<h3>Modo Eliminador de Fallos</h3>
+
+<p>
+Para este modo no es necesario utilizar ningún dispositivo externo, como ordenador o teléfono.
+</p>
+
+<div class="caja">
+<ol>
+<li>Ponga el vehículo en contacto, con el motor apagado.</li>
+<li>Inserte EL MATADOR - MATA00 en la toma de diagnóstico OBD2 del vehículo.</li>
+<li>Espere aproximadamente 10 segundos.</li>
+<li>Retire el equipo de la toma OBD2.</li>
+<li>Ponga en marcha el motor.</li>
+</ol>
+</div>
+
+<h3>Modo Scanner Automotriz</h3>
+
+<p>
+Este modo permite usar el equipo como scanner automotriz desde un ordenador o teléfono móvil.
+</p>
+
+<div class="caja">
+<ol>
+<li>Conecte el cable USB al MATA00.</li>
+<li>Conecte el otro extremo del cable USB a la PC o al móvil.</li>
+<li>Espere aproximadamente 30 segundos.</li>
+<li>Localice el conector OBD2 del vehículo.</li>
+<li>Conecte el MATA00 al puerto OBD2.</li>
+<li>Coloque el contacto del vehículo en posición ON.</li>
+<li>Utilice el software de Windows o la aplicación Android para enviar comandos al equipo.</li>
+</ol>
+</div>
+
+<h2>5. Uso en Windows</h2>
+
+<ol>
+<li>Descargue el software MATA00 desde la página oficial.</li>
+<li>Descomprima el archivo ZIP.</li>
+<li>Ejecute el programa.</li>
+<li>Seleccione el puerto COM correspondiente al MATA00.</li>
+<li>Pulse conectar.</li>
+<li>Introduzca el comando deseado.</li>
+</ol>
+
+<h2>6. Uso en Android</h2>
+
+<ol>
+<li>Instale la aplicación Serial USB Terminal.</li>
+<li>Conecte el teléfono al MATA00 mediante cable USB OTG.</li>
+<li>Abra la aplicación.</li>
+<li>Seleccione el dispositivo USB detectado.</li>
+<li>Configure la comunicación serie.</li>
+</ol>
+
+<table>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+</tr>
+<tr>
+<td>Baudrate</td>
+<td>115200</td>
+</tr>
+<tr>
+<td>Data bits</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Stop bits</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Paridad</td>
+<td>Ninguna</td>
+</tr>
+</table>
+
+<h2>7. Comandos disponibles</h2>
+
+<h3>Lectura simple</h3>
+
+<table>
+<tr>
+<th>Comando</th>
+<th>Descripción</th>
+</tr>
+<tr><td>RPM</td><td>Revoluciones por minuto</td></tr>
+<tr><td>ECT</td><td>Temperatura del refrigerante</td></tr>
+<tr><td>SPD</td><td>Velocidad del vehículo</td></tr>
+<tr><td>LOAD</td><td>Carga calculada del motor</td></tr>
+<tr><td>MAP</td><td>Presión del múltiple de admisión</td></tr>
+<tr><td>IAT</td><td>Temperatura del aire de admisión</td></tr>
+<tr><td>MAF</td><td>Caudal de aire</td></tr>
+<tr><td>TPS</td><td>Posición de mariposa</td></tr>
+<tr><td>PEDAL</td><td>Posición del pedal del acelerador</td></tr>
+<tr><td>FUEL</td><td>Consumo instantáneo de combustible</td></tr>
+<tr><td>LAMBDA1</td><td>Sonda lambda 1</td></tr>
+<tr><td>ST1</td><td>Corrector rápido banco 1</td></tr>
+<tr><td>LT1</td><td>Corrector lento banco 1</td></tr>
+<tr><td>ST2</td><td>Corrector rápido banco 2</td></tr>
+<tr><td>LT2</td><td>Corrector lento banco 2</td></tr>
+<tr><td>DTC</td><td>Leer averías confirmadas</td></tr>
+<tr><td>PEND</td><td>Leer averías pendientes</td></tr>
+<tr><td>PERM</td><td>Leer averías permanentes</td></tr>
+<tr><td>CLR</td><td>Borrar averías</td></tr>
+</table>
+
+<h3>Lectura continua</h3>
+
+<p>
+Para realizar una lectura continua cada 500 ms, agregue la letra <strong>X</strong> al final del comando.
+</p>
+
+<div class="caja">
+Ejemplos:<br><br>
+<code>RPMX</code><br>
+<code>MAPX</code><br>
+<code>ECTX</code><br>
+<code>MAFX</code><br>
+<code>LAMBDA1X</code>
+</div>
+
+<p>
+Para detener la lectura continua utilice:
+</p>
+
+<code>STOP</code>
+
+<h2>8. Lectura y borrado de averías</h2>
+
+<h3>Leer averías confirmadas</h3>
+
+<p>Comando:</p>
+<code>DTC</code>
+
+<h3>Leer averías pendientes</h3>
+
+<p>Comando:</p>
+<code>PEND</code>
+
+<h3>Leer averías permanentes</h3>
+
+<p>Comando:</p>
+<code>PERM</code>
+
+<h3>Borrar averías</h3>
+
+<p>Comando:</p>
+<code>CLR</code>
+
+<div class="alerta">
+<strong>Importante:</strong> Algunos códigos permanentes no se eliminan inmediatamente con el borrado manual. En algunos vehículos pueden desaparecer luego de varios ciclos de conducción si la falla no vuelve a presentarse.
+</div>
+
+<h2>9. Indicaciones importantes</h2>
+
+<ul>
+<li>El borrado de averías puede apagar el testigo de motor si la falla ya no está presente.</li>
+<li>No todos los vehículos soportan todos los parámetros OBD2.</li>
+<li>El equipo está diseñado para vehículos con comunicación OBD2 CAN BUS.</li>
+<li>Utilice el equipo de forma responsable y únicamente en vehículos compatibles.</li>
+</ul>
+
+<h2>10. Solución de problemas</h2>
+
+<h3>No hay comunicación</h3>
+
+<ul>
+<li>Verifique que el vehículo esté en contacto.</li>
+<li>Compruebe que el conector OBD2 esté bien insertado.</li>
+<li>Revise el cable USB.</li>
+<li>Confirme que el vehículo utilice OBD2 CAN BUS.</li>
+</ul>
+
+<h3>No aparecen algunos parámetros</h3>
+
+<p>
+El vehículo puede no soportar ese PID. Esto es normal en algunos modelos.
+</p>
+
+<h3>No se borran los fallos</h3>
+
+<p>
+Si la falla sigue presente, la ECU puede volver a registrar el código inmediatamente. También existen códigos permanentes que requieren ciclos de conducción para desaparecer.
+</p>
+
+<h2>11. Soporte</h2>
+
+<p>
+Página oficial:
+</p>
+
+<a class="boton" href="https://mata00v8.github.io/mata00" target="_blank">
+https://mata00v8.github.io/mata00
+</a>
+
+<div class="footer">
+© EL MATADOR - MATA00<br>
+Todos los derechos reservados.
+</div>
+
+</div>
+
+</body>
+</html>
+```
